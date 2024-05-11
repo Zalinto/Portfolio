@@ -4,7 +4,7 @@ import Navbar from "./components/Navbar";
 // import ProjectsSection from "./components/ProjectSection";
 // import EmailSection from "./components/EmailSection";
 // import Footer from "./components/Footer";
-// import AchievementsSection from "./components/AchievementsSection";
+import AchievementsSection from "./components/AchievementsSection.jsx";
 
 export default function Home() {
   return (
@@ -13,7 +13,7 @@ export default function Home() {
         <h1>tests</h1>
         <Navbar />
         <HeroSection />
-        {/* <AchievementsSection /> */}
+        <AchievementsSection />
         {/* <AboutSection /> */}
         {/* <ProjectsSection /> */}
         {/* <EmailSection /> */}
