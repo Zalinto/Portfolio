@@ -3,59 +3,34 @@ import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
+// import StartupImage from "../images/projectImages/startup.png";
+// import AntearPathwayImage from "../images/projectImages/anteater-image.gif";
 
 const projectsData = [
     {
         id: 1,
-        title: "React Portfolio Website",
-        description: "Project 1 description",
-        // image: "/images/projects/1.png",
-        tag: ["All", "Web"],
+        title: "Moxy",
+        description: "Created a dynamic social networking app fostering spontaneous connections among nearby users with shared interests. Discover events and trending locations for enriched experiences and enhanced interactions.",
+        // image: {StartupImage},
+        tag: ["All", "Web", "Mobile"],
         gitUrl: "/",
         previewUrl: "/",
     },
     {
         id: 2,
-        title: "Potography Portfolio Website",
-        description: "Project 2 description",
-        // image: "/images/projects/2.png",
+        title: "Anteater Pathways",
+        description: "Created a course planner web app, adored by 500+ UCI students since December 2020, using ReactJS, MongoDB-powered web crawler for real-time course data, and integrated REST API endpoints for smooth data access.s",
+        // image: {AntearPathwayImage},
         tag: ["All", "Web"],
-        gitUrl: "/",
-        previewUrl: "/",
+        gitUrl: "https://github.com/Zalinto/Anteater-Pathway",
+        previewUrl: "https://www.anteaterpathway.com/",
     },
     {
         id: 3,
-        title: "E-commerce Application",
+        title: "Coming soon...",
         description: "Project 3 description",
         // image: "/images/projects/3.png",
-        tag: ["All", "Web"],
-        gitUrl: "/",
-        previewUrl: "/",
-    },
-    {
-        id: 4,
-        title: "Food Ordering Application",
-        description: "Project 4 description",
-        image: "/images/projects/4.png",
-        tag: ["All", "Mobile"],
-        gitUrl: "/",
-        previewUrl: "/",
-    },
-    {
-        id: 5,
-        title: "React Firebase Template",
-        description: "Authentication and CRUD operations",
-        // image: "/images/projects/5.png",
-        tag: ["All", "Web"],
-        gitUrl: "/",
-        previewUrl: "/",
-    },
-    {
-        id: 6,
-        title: "Full-stack Roadmap",
-        description: "Project 5 description",
-        // image: "/images/projects/6.png",
-        tag: ["All", "Web"],
+        tag: ["All"],
         gitUrl: "/",
         previewUrl: "/",
     },
