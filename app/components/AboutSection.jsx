@@ -64,7 +64,8 @@ const TAB_DATA = [
             <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
             <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
             <p className="text-base lg:text-lg">
-                Hey there! I'm a full-stack web developer passionate about crafting interactive applications. Beyond coding, I love exploring webtoons, diving into anime, and staying active with workouts. Gaming is a big hobby, and I'm always up for trying new foods. Of course, coding is a big part of my life, whether it's on passion projects or at work. I thrive on collaboration and can't wait to team up to create something amazing. Let's build together!
+                {/* flag for issue? */}
+                Hey there! I&apos;m a full-stack web developer passionate about crafting interactive applications. Beyond coding, I love exploring webtoons, diving into anime, and staying active with workouts. Gaming is a big hobby, and I&apos;m always up for trying new foods. Of course, coding is a big part of my life, whether it&apos;s on passion projects or at work. I thrive on collaboration and can&apos;t wait to team up to create something amazing. Let&apos;s build together!
             </p>
             <div className="flex flex-row justify-start mt-8">
                 <TabButton
