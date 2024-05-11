@@ -4,7 +4,8 @@ import AboutSection from "./components/AboutSection.jsx";
 import ProjectsSection from "./components/ProjectsSections";
 import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
-import AchievementsSection from "./components/AchievementsSection.jsx";
+import AchievementsSection from "./components/AchievementsSection";
+import ExperienceSection from "./components/ExperienceSection";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <HeroSection />
         <AchievementsSection />
         <AboutSection />
+        {/* <ExperienceSection /> */}
         <ProjectsSection />
         <ContactSection />
       </div>
