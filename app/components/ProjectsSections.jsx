@@ -3,7 +3,7 @@ import React, { useState, useRef } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectTag from "./ProjectTag";
 import { motion, useInView } from "framer-motion";
-// import StartupImage from "../images/projectImages/startup.png";
+import StartupImage from "../images/projectImages/startup.png";
 // import AntearPathwayImage from "../images/projectImages/anteater-image.gif";
 
 const projectsData = [
@@ -11,7 +11,7 @@ const projectsData = [
         id: 1,
         title: "Moxy",
         description: "Created a dynamic social networking app fostering spontaneous connections among nearby users with shared interests. Discover events and trending locations for enriched experiences and enhanced interactions.",
-        // image: {StartupImage},
+        image: "/startup.png",
         tag: ["All", "Web", "Mobile"],
         gitUrl: "/",
         previewUrl: "/",
@@ -78,22 +78,22 @@ const ProjectsSection = () => {
         </div>
         <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
             {filteredProjects.map((project, index) => (
-            <motion.li
-                key={index}
-                variants={cardVariants}
-                initial="initial"
-                animate={isInView ? "animate" : "initial"}
-                transition={{ duration: 0.3, delay: index * 0.4 }}
-            >
-                <ProjectCard
-                key={project.id}
-                title={project.title}
-                description={project.description}
-                imgUrl={project.image}
-                gitUrl={project.gitUrl}
-                previewUrl={project.previewUrl}
-                />
-            </motion.li>
+                <motion.li
+                    key={index}
+                    variants={cardVariants}
+                    initial="initial"
+                    animate={isInView ? "animate" : "initial"}
+                    transition={{ duration: 0.3, delay: index * 0.4 }}
+                >
+                    <ProjectCard
+                        key={project.id}
+                        title={project.title}
+                        description={project.description}
+                        imgUrl={project.image}
+                        gitUrl={project.gitUrl}
+                        previewUrl={project.previewUrl}
+                    />
+                </motion.li>
             ))}
         </ul>
         </section>
