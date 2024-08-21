@@ -59,7 +59,7 @@ const TAB_DATA = [
     };
 
     const OPTIONS = { loop: true }
-    const SLIDE_COUNT = 4
+    const SLIDE_COUNT = 12
     const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
     return (
